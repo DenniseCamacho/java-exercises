@@ -13,6 +13,10 @@ public class ConsoleExercises {//class
         System.out.printf("The value of pi is approximately %f\n", pi);
 //        String myName = String.format("\n%s %s", "Dee", "Sea");
 //        System.out.printf(myName);
+//        double pi = 3.14159;
+//        String output = String.format("the value of pi is %.2fs");
+//        System.out.println(output);
+
 // TODO:Prompt a user to enter a integer and store that value in an
 //        int variable using the nextInt method.
         //v----
@@ -21,6 +25,13 @@ public class ConsoleExercises {//class
         System.out.println("enter the number of sandwiches you'd like to order");
         int usersNumber = sc.nextInt();
         System.out.printf("You want %d sandwiches", usersNumber);
+
+//        Scanner sc = new Scanner(System.in);
+//        System.out.println("Enter 3 words: ");
+//        String word1 = sc.next();
+//        String word2 = sc.next();
+//        String word3 = sc.next();
+//
 
 /**What happens if you input something that is not an integer?**/
         //it gives a type error message.
@@ -58,7 +69,25 @@ public class ConsoleExercises {//class
 //        System.out.println("enter your last name");
 //        String userLastName = sc.next();
 
+// TODO: Calculate the perimeter and area of Codeup's classrooms.
+//TODO: Prompt the user to enter values of length and width of a classroom at Codeup (or your room if virtual).
+//TODO: Use the nextLine method each time you need to get user input. In this case, we need it twice, once to get the user input for the length and again to get the user input for the width. Parse the resulting strings to a numeric type.
+//        Assume that the rooms are perfect rectangles.
+//                Assume that the user will enter valid numeric data for length and width.
+//                Display the area and perimeter of that classroom.
+//                The area of a rectangle is equal to the length times the width, and the
+//                perimeter of a rectangle is equal to 2 times the length plus 2 times the
+//                width.
+//Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the length: ");
+        String lengthInput = sc.nextLine();
+        System.out.println("Enter the width: ");
+        String widthInput = sc.nextLine();
 
-
+        float length = Float.parseFloat(lengthInput);
+        float width = Float.parseFloat(widthInput);
+        System.out.println("the area is: " + (length * width) + ".");
+        System.out.println("the width is: " + (length * 2 + width * 2) + ".");
+//refactor later to use %f
     }
 }
