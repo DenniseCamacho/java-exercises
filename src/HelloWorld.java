@@ -16,7 +16,7 @@ public class HelloWorld {
         // myString = 'c';//error java: incompatible types: char cannot be converted to java.lang.String
        /**4 Change your code to assign the value 3.14159 to myString. What happens?**/
         //myString = 3.14159; //java: incompatible types: double cannot be converted to java.lang.String
-       /**5 Declare an long variable named myNumber, but do not assign anything to it.
+       /**5 Declare a long variable named myNumber, but do not assign anything to it.
         *  Next try to print out myNumber to the console. What happens?**/
 //                long myNumber;
         //System.out.println("what happens: " + myNumber); //java: variable myNumber might not have been initialized
@@ -44,6 +44,9 @@ public class HelloWorld {
         /**What is the difference between the above code blocks? Explain why the code outputs what it does.**/
 
         /**Try to create a variable named class. What happens?**/
+
+//        Object var;
+//        var class = 21;
 
         /**        Object is the most generic type in Java. You can assign any value to a variable of type Object.
          * What do you think will happen when the following code is run?
