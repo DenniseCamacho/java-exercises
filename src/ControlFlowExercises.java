@@ -53,12 +53,13 @@ public class ControlFlowExercises {
 //        65536
 
         //TODO: Clarification on what is going wrong here and why 2 is not showing up.
-         /**       long intnum = 2;
+        /**
+      long intnum = 2;
         do{
             System.out.println(intnum = intnum * intnum);
         }while(intnum >= 2  && intnum < 10000);
+        **/
         //NOT SURE HOW TO START AT 2.
-  **/
 //
 //        Refactor the previous two exercises to use a for loop instead.
          /**  for (int i = 20; i >= -2; i--) {
@@ -66,13 +67,20 @@ public class ControlFlowExercises {
         } **/
 
         //TODO: Clarification on what is going wrong here.
-        /**       for (long i = 1; i <= 100; i++) {
-            if (i % 2 == 0) {
-                long s = i * i;
-                System.out.println(s * s);
-            }
+        /**
+        for (long i = 2; i < 10000; i++) {
+           if (i >= 2  && i < 10000) {
+               System.out.printf("%d %n",i);
+           }
         }
-  **/
+         **/
+/**
+                for (long i = 1; i <= 100; i++) {
+             if (i % 2 == 0) {
+                 System.out.println(i);
+             }
+         }
+**/
 
         //NOT SURE HOW TO CHECK WHAT IS GOING WRONG.
 
@@ -111,10 +119,11 @@ public class ControlFlowExercises {
             }
         }
    **/
+
+
 //        Display a table of powers.
-//
 //               TODO: Prompt the user to enter an integer.
-        //1.make the scanner...
+ /**       //1.make the scanner...
         Scanner sc = new Scanner(System.in);
         //2.now you can get users input.
         System.out.println("Please enter a number: ");
@@ -125,6 +134,8 @@ public class ControlFlowExercises {
         for (int i = 1; i < usersNumber; i++) {
             System.out.printf("%d squared is: " + usersNumberSquared, usersNumber);
         }
+
+  **/
 //        Ask if the user wants to continue.
 //        Assume that the user will enter valid data.
 //        Only continue if the user agrees to.
