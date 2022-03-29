@@ -119,8 +119,12 @@ public class ControlFlowExercises {
         //2.now you can get users input.
         System.out.println("Please enter a number: ");
         int usersNumber = sc.nextInt();
-
-//        Display a table of squares and cubes from 1 to the value entered.
+//     TODO:   Display a table of squares and cubes from 1 to the value entered.
+        for (int i = 1; i < usersNumber; i++) {
+            long usersNumberSquared = usersNumber * usersNumber;
+            long usersNumberCubed = usersNumber * usersNumber * usersNumber;
+            System.out.printf("%d squared is: " + usersNumberSquared + "%d cubed is: " + usersNumberCubed, usersNumber);
+        }
 //        Ask if the user wants to continue.
 //        Assume that the user will enter valid data.
 //        Only continue if the user agrees to.
