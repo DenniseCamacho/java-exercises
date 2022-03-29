@@ -50,6 +50,8 @@ public class ControlFlowExercises {
 //        16
 //        256
 //        65536
+
+        //TODO: Clarification on what is going wrong here and why 2 is not showing up.
  /**       long intnum = 2;
         do{
             System.out.println(intnum = intnum * intnum);
@@ -62,6 +64,7 @@ public class ControlFlowExercises {
             System.out.println("backwards by 5's from 100 to -10: " + i * 5);
         } **/
 
+        //TODO: Clarification on what is going wrong here.
         for (long i = 1; i <= 100; i++) {
             if (i % 2 == 0) {
                 long s = i * i;
