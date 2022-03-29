@@ -3,23 +3,23 @@ public class MethodsExercises {
 //        Basic Arithmetic
 //
 //       TODO: Create four separate methods. Each will perform an arithmetic operation:
-
-//Addition
-        public static void addMe() {
-
-        }
-//Subtraction
-        public static void subtractMe() {
-
-        }
-//Multiplication
-        public static void multiplyMe() {
-
-        }
-//Division
-        public static void divideMe() {
-
-        }
+//
+////Addition
+//        public static long addMe(long n) {
+//            return (n + n);
+//        }
+////Subtraction
+//        public static void subtractMe() {
+//
+//        }
+////Multiplication
+//        public static void multiplyMe() {
+//
+//        }
+////Division
+//        public static void divideMe() {
+//
+//        }
 
 
 
