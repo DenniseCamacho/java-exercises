@@ -18,6 +18,7 @@ public class ControlFlowExercises {
         int i = 5;
         while (i <= 15){
             System.out.println("i is " + i);
+ // correct: System.out.print("i is " + i + " ");
             i++;
         }
          **/
@@ -33,6 +34,12 @@ public class ControlFlowExercises {
             i2++;
         }
  **/
+//ins:
+//        int i = 2;
+//        do {
+//            System.out.println(i);
+//            i = i + 2;
+//        } while (i <= 100);
 
         //TODO:Follow each number with a new line.
         //TODO:Alter your loop to count backwards by 5's from 100 to -10
@@ -42,6 +49,14 @@ public class ControlFlowExercises {
             i3--;
         }
  **/
+
+//ins:
+//        int i = 100;
+//        do {
+//            System.out.println(i);
+//            i -= 5;
+//        } while (i >=  -10);
+
 
         //TODO:Create a do-while loop that starts at 2,
         // and displays the number squared on each line
@@ -60,11 +75,20 @@ public class ControlFlowExercises {
         }while(intnum >= 2  && intnum < 10000);
         **/
         //NOT SURE HOW TO START AT 2.
-//
+//        long i = 2; // it doesnt work as int because 2b is max
+//        do{
+//            System.out.println(i);
+//            i *= i;
+//        } while(i < 1_000_000L);
+
 //        Refactor the previous two exercises to use a for loop instead.
          /**  for (int i = 20; i >= -2; i--) {
             System.out.println("backwards by 5's from 100 to -10: " + i * 5);
         } **/
+         //ins:
+//        for (long i = 100; i >= -10; i-=5) {
+//            System.out.println(i);
+//        }
 
         //TODO: Clarification on what is going wrong here.
         /**
@@ -82,6 +106,11 @@ public class ControlFlowExercises {
          }
 **/
 
+//ins:
+//        for (long i = 2; i < 1_000_000; i *= i) {
+//            System.out.println(i);
+//        }
+
         //NOT SURE HOW TO CHECK WHAT IS GOING WRONG.
 
 
@@ -92,6 +121,7 @@ public class ControlFlowExercises {
             System.out.println(i);
         }
   **/
+
 //       TODO: For multiples of three: print “Fizz” instead of the number.
  /**       for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0) {
@@ -101,6 +131,7 @@ public class ControlFlowExercises {
             }
         }
   **/
+
 //      TODO:  For the multiples of five: print “Buzz”.
 /**        for (int i = 1; i <= 100; i++) {
             if (i % 5 == 0) {
@@ -119,6 +150,26 @@ public class ControlFlowExercises {
             }
         }
    **/
+//        for (int i = 1; i <= 100; i++) {
+//            if (i % 3 == 0 && i % 5 == 0) {
+//                System.out.println("FizzBuzz");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+
+  //ins:
+//        for (int i = 1; i <= 100; i += 1) {
+//                if (i % 15 == 0){
+//                    System.out.println("fizzbuzz");
+//                } else if(i % 5 == 0){
+//                    System.out.println("buzz");
+//                }else if(i % 3 == 0){
+//                    System.out.println("fizz");
+//                } else {
+//                    System.out.println(i);
+//                }
+//        }
 
 
 //        Display a table of powers.
