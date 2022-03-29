@@ -1,3 +1,5 @@
+import java.lang.Math;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 //        For all of the following exercises, create a new class named ControlFlowExercises with a main method. After each exercise, commit your changes, then replace your code in the main method with the next exercise.
@@ -48,14 +50,27 @@ public class ControlFlowExercises {
 //        16
 //        256
 //        65536
-//        For /**  **/
-        long intnum = 2;
+ /**       long intnum = 2;
         do{
             System.out.println(intnum = intnum * intnum);
         }while(intnum >= 2  && intnum < 10000);
         //NOT SURE HOW TO START AT 2.
+  **/
 //
 //        Refactor the previous two exercises to use a for loop instead.
+      /**  for (int i = 20; i >= -2; i--) {
+            System.out.println("backwards by 5's from 100 to -10: " + i * 5);
+        } **/
+
+        for (long i = 1; i <= 100; i++) {
+            if (i % 2 == 0) {
+                long s = i * i;
+                System.out.println(s * s);
+            }
+        }
+        //NOT SURE HOW TO CHECK WHAT IS GOING WRONG.
+
+
 //        Fizzbuzz
 //
 //        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
