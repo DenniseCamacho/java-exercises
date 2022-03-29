@@ -120,10 +120,10 @@ public class ControlFlowExercises {
         System.out.println("Please enter a number: ");
         int usersNumber = sc.nextInt();
 //     TODO:   Display a table of squares and cubes from 1 to the value entered.
+        long usersNumberSquared = usersNumber * usersNumber;
+        long usersNumberCubed = usersNumber * usersNumber * usersNumber;
         for (int i = 1; i < usersNumber; i++) {
-            long usersNumberSquared = usersNumber * usersNumber;
-            long usersNumberCubed = usersNumber * usersNumber * usersNumber;
-            System.out.printf("%d squared is: " + usersNumberSquared + "%d cubed is: " + usersNumberCubed, usersNumber);
+            System.out.printf("%d squared is: " + usersNumberSquared, usersNumber);
         }
 //        Ask if the user wants to continue.
 //        Assume that the user will enter valid data.
