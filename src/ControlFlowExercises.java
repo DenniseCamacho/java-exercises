@@ -1,4 +1,5 @@
 import java.lang.Math;
+import java.util.Scanner;
 
 public class ControlFlowExercises {
     public static void main(String[] args) {
@@ -52,7 +53,7 @@ public class ControlFlowExercises {
 //        65536
 
         //TODO: Clarification on what is going wrong here and why 2 is not showing up.
- /**       long intnum = 2;
+         /**       long intnum = 2;
         do{
             System.out.println(intnum = intnum * intnum);
         }while(intnum >= 2  && intnum < 10000);
@@ -60,31 +61,65 @@ public class ControlFlowExercises {
   **/
 //
 //        Refactor the previous two exercises to use a for loop instead.
-      /**  for (int i = 20; i >= -2; i--) {
+         /**  for (int i = 20; i >= -2; i--) {
             System.out.println("backwards by 5's from 100 to -10: " + i * 5);
         } **/
 
         //TODO: Clarification on what is going wrong here.
-        for (long i = 1; i <= 100; i++) {
+        /**       for (long i = 1; i <= 100; i++) {
             if (i % 2 == 0) {
                 long s = i * i;
                 System.out.println(s * s);
             }
         }
+  **/
+
         //NOT SURE HOW TO CHECK WHAT IS GOING WRONG.
 
 
 //        Fizzbuzz
-//
 //        One of the most common interview questions for entry-level programmers is the FizzBuzz test. Developed by Imran Ghory, the test is designed to assess basic looping and conditional logic skills.
-//
-//                Write a program that prints the numbers from 1 to 100.
-//        For multiples of three: print “Fizz” instead of the number.
-//        For the multiples of five: print “Buzz”.
-//        For numbers which are multiples of both three and five: print “FizzBuzz”.
+//            TODO:    Write a program that prints the numbers from 1 to 100.
+ /**       for (int i = 1; i <= 100; i++) {
+            System.out.println(i);
+        }
+  **/
+//       TODO: For multiples of three: print “Fizz” instead of the number.
+ /**       for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0) {
+                System.out.println("fizz");
+            } else {
+                System.out.println(i);
+            }
+        }
+  **/
+//      TODO:  For the multiples of five: print “Buzz”.
+/**        for (int i = 1; i <= 100; i++) {
+            if (i % 5 == 0) {
+                System.out.println("Buzz");
+            } else {
+                System.out.println(i);
+            }
+        }
+ **/
+//       TODO: For numbers which are multiples of both three and five: print “FizzBuzz”.
+  /**      for (int i = 1; i <= 100; i++) {
+            if (i % 3 == 0 || i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println(i);
+            }
+        }
+   **/
 //        Display a table of powers.
 //
-//                Prompt the user to enter an integer.
+//               TODO: Prompt the user to enter an integer.
+        //1.make the scanner...
+        Scanner sc = new Scanner(System.in);
+        //2.now you can get users input.
+        System.out.println("Please enter a number: ");
+        int usersNumber = sc.nextInt();
+
 //        Display a table of squares and cubes from 1 to the value entered.
 //        Ask if the user wants to continue.
 //        Assume that the user will enter valid data.
