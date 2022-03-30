@@ -1,88 +1,132 @@
+import java.util.Scanner;
+
 public class MethodsExercises {
-//       TODO: Create four separate methods. Each will perform an arithmetic operation:
     //you can only have one main method.
-//Addition
-    public static int addSome(int n, int n2){
-        return n + n2;
-    }
-    public static void addSomeMsg(){
-        System.out.println("Add: ");
-    }
-//Subtraction
-    public static int subtractMe(int n1 ,int n2) {
-       return n1 - n2;
-    }
-    public static void subSomeMsg(){
-        System.out.println("Subtract: ");
-    }
-//Multiplication
-    public static int multiplyMe(int n1 ,int n2) {
-        return n1 * n2;
-    }
-    public static void mulSomeMsg(){
-        System.out.println("Multiply: ");
-    }
-//Division
-    public static int divideMe(int n1 ,int n2) {
-        return n1 / n2;
-    }
-    public static void divSomeMsg(){
-        System.out.println("Divide: ");
-    }
-//Modulus
-    public static int modulusMe(int n1, int n2){
-        return n1 % n2;
-    }
-    public static void main(String[] args) {
-//       //TODO:a. Basic Arithmetic.
-        //TODO:b.Each function needs to take two parameters/
-        // arguments so that the operation can be performed
-//        addSomeMsg(); System.out.println(addSome(2,2));
-//        subSomeMsg(); System.out.println(subtractMe(10,5));
-//        mulSomeMsg(); System.out.println(multiplyMe(5,5));
-//        divSomeMsg(); System.out.println(divideMe(10,5));
-        System.out.println("Add: " + addSome(2,2));
-        System.out.println("Subtract: " + subtractMe(10, 5));
-        System.out.println("Multiply: " + multiplyMe(5, 5));
-        System.out.println("Divide: " + divideMe(10, 5));
-        //TODO: c.Test your methods and verify the output.
-        //TODO: d.Add a modulus method that finds
-        // the modulus of two numbers.
-//Food for thought: What happens if we try to divide by zero?
-//                  What should happen?
+// TODO: use recursion to print out a given number up through 100
+    /**
+     public static int countTo100(int num) {
+     // }
+     public static void countTo100(int num){
+     if (num > 100){
+     System.out.println("done.");
+     return;
+     }
+     System.out.println(num);
+     countTo100(num + 1);
+     } //invoked in main.
+     **/
+    /**
+     public static int countTo100(int num){
+     System.out.println(num);
+     if(num == 100){
+     return 1;
+     }
+     return countTo100(num + 1);
+     }
+     **/
+// TODO: use recursion to add all numbers up from 1 to a given number
+/**
+ // public static int addNums(int num) {
+ // }
 
+ public static int addNums(int num) {
+ if (num == 1){
+ return 1;
+ }
+ return num + addNums(num - 1);
+ }
+ **/
+// TODO: Create four separate methods. Each will perform an arithmetic operation:
+/**
+ //Addition
+ public static int addSome(int n, int n2){
+ return n + n2;
+ }
+ public static void addSomeMsg(){
+ System.out.println("Add: ");
+ }
+ //Subtraction
+ public static int subtractMe(int n1 ,int n2) {
+ return n1 - n2;
+ }
+ public static void subSomeMsg(){
+ System.out.println("Subtract: ");
+ }
+ //Multiplication
+ public static int multiplyMe(int n1 ,int n2) {
+ return n1 * n2;
+ }
+ public static void mulSomeMsg(){
+ System.out.println("Multiply: ");
+ }
+ //Division
+ public static int divideMe(int n1 ,int n2) {
+ return n1 / n2;
+ }
+ public static void divSomeMsg(){
+ System.out.println("Divide: ");
+ }
+ //Modulus
+ public static int modulusMe(int n1, int n2){
+ return n1 % n2;
+ }
+ **/
+//TODO:a. Basic Arithmetic.
+//TODO:b.Each function needs to take two parameters/
+// arguments so that the operation can be performed
+//TODO: c.Test your methods and verify the output.
+//TODO: d.Add a modulus method that finds
+// the modulus of two numbers.
+//public static void main(String[] args) {
 
-
-
-
-
-//        Each function needs to take two parameters/arguments so that the operation can be performed.
-//
-//                Test your methods and verify the output.
-//
-//        Add a modulus method that finds the modulus of two numbers.
-//
-//                Food for thought: What happens if we try to divide by zero? What should happen?
-//
-//                Bonus
-//
-//        Create your multiplication method without the * operator (Hint: a loop might be helpful).
-//        Do the above with recursion.
-//                Create a method that validates that user input is in a certain range
-//
-//        The method signature should look like this:
-//
-//
-//        public static int getInteger(int min, int max);
-//        and is used like this:
-//
-//
+    /**
+     * //        addSomeMsg(); System.out.println(addSome(2,2));
+     * //        subSomeMsg(); System.out.println(subtractMe(10,5));
+     * //        mulSomeMsg(); System.out.println(multiplyMe(5,5));
+     * //        divSomeMsg(); System.out.println(divideMe(10,5));
+     * //        Scanner sc = new Scanner(System.in);
+     * //        System.out.println("Please enter two numbers: ");
+     * System.out.println("Add: " + addSome(2,2));
+     * System.out.println("Subtract: " + subtractMe(10, 5));
+     * System.out.println("Multiply: " + multiplyMe(5, 5));
+     * System.out.println("Divide: " + divideMe(10, 5));
+     **/
+//Do the above with recursion. <-bonus
+//}
+//TODO:Create a method that validates that user input
+// is in a certain range
+// The method signature should look like this:
+    //public static int getInteger(int min, int max);
+    //and is used like this:
 //        System.out.print("Enter a number between 1 and 10: ");
 //        int userInput = getInteger(1, 10);
-//        If the input is invalid, prompt the user again.
-//
-//                Hint: recursion might be helpful here!
-//
+//     TODO:If the input is invalid, prompt the user again.
+//        Hint: recursion might be helpful here!
+    //[x]create the scanner.
+    //[x]get users input.
+    //[x]if users input is greater than 10
+    // or less than 0, continue to prompt user.
+    //[x]user exits when entering correct number.
+    public static void getInteger(int n){
+        if (n > 10 || n <= 0) {
+            do {
+                Scanner sc = new Scanner(System.in);
+                System.out.println("please enter a valid number");
+                n = sc.nextInt();
+            } while (n > 10 || n <= 0);
+        }
+            System.out.println("thank you! goodbye.");
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number between 1-10");
+        int usersResp = sc.nextInt();
+        getInteger(usersResp);
+    }
+}
+
+
 //                Calculate the factorial of a number.
 //
 //                Prompt the user to enter an integer from 1 to 10.
@@ -136,7 +180,7 @@ public class MethodsExercises {
 //
 //        Remember to follow our pair programming best practices and switch computers every once in a while.
 //
-//        Console Adventure Game!
+//        Console Adventure Game! ///optional
 //
 //                Using what you've learned so far in the Java I module, we're going to create a classic text-based RPG game. These types of online role-playing games date back to the 70's and solely rely on a text-based interface. In this case, we'll be using Java to run this game in our console.
 //
@@ -160,9 +204,6 @@ public class MethodsExercises {
 //        Indicate how many potions your hero starts with. Decrement this number each time 'Use Potion' action is used.
 //
 //                Remember that these are only suggestions. Feel free to get creative and have fun!!
-    }
-}
-
 //--------------
 //public class MethodLecture {
 //
