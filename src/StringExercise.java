@@ -46,10 +46,10 @@ class Bob {
 //        Write the Java code necessary so that a user of your
 //        command line application can have a conversation with Bob.
         //create Strings with Bob's responses(4)
-        String messageWithQuestionMark = "Sure.";
-        String messageWithExclamation = "Whoa, chill out!";
-        String messageWithNothing = "Fine. Be that way!";
-        String messageWithAnythingElse = "Whatever.";
+        String messageWithQuestionMark = "Bob: Sure.";
+        String messageWithExclamation = "Bob: Whoa, chill out!";
+        String messageWithNothing = "Bob: Fine. Be that way!";
+        String messageWithAnythingElse = "Bob: Whatever.";
         String contQuestion = "Do you still want to talk to Bob?";
         //create a Scanner.
         Scanner sc = new Scanner(System.in);
@@ -58,23 +58,25 @@ class Bob {
         String continues;
         switch(usersResponse) {
             case "no":
-                System.out.println("Bob: ...");
+                System.out.println("*Bob shrugs and walks away*");
                 break;
             case "yes":
-                System.out.println("What would you like to say?");
-                System.out.println("Bob: ...");
-                String usersResponse2 = sc.nextLine();
-                if (usersResponse2.indexOf("?") >= 0){
-                    System.out.println(messageWithQuestionMark);
-                } else if (usersResponse2.indexOf("!") >= 0){
-                    System.out.println(messageWithExclamation);
-                } else if (usersResponse2.length() < 1){
-                    System.out.println(messageWithNothing);
-                } else {
-                    System.out.println(messageWithAnythingElse);
-                }
-                System.out.println(contQuestion);
-                continues = sc.nextLine();
+                do {
+                    System.out.println("What would you like to say?");
+                    System.out.println("Bob: ...");
+                    String usersResponse2 = sc.nextLine();
+                    if (usersResponse2.indexOf("?") >= 0) {
+                        System.out.println(messageWithQuestionMark);
+                    } else if (usersResponse2.indexOf("!") >= 0) {
+                        System.out.println(messageWithExclamation);
+                    } else if (usersResponse2.length() < 1) {
+                        System.out.println(messageWithNothing);
+                    } else {
+                        System.out.println(messageWithAnythingElse);
+                    }
+                    System.out.println(contQuestion);
+                    continues = sc.nextLine();
+                } while (continues.equals("yes"));
         }
 
 
