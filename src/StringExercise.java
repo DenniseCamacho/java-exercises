@@ -57,9 +57,6 @@ class Bob {
         String usersResponse = sc.nextLine();
         String continues;
         switch(usersResponse) {
-            case "no":
-                System.out.println("*Bob shrugs and walks away*");
-                break;
             case "yes":
                 do {
                     System.out.println("What would you like to say?");
@@ -77,6 +74,9 @@ class Bob {
                     System.out.println(contQuestion);
                     continues = sc.nextLine();
                 } while (continues.equals("yes"));
+            case "no":
+                System.out.println("*Bob shrugs and walks away*");
+                break;
         }
 
 
