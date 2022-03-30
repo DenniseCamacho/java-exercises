@@ -32,8 +32,6 @@ public class StringExercise {
          **/
     }
 }
-class Bob {
-    public static void main(String[] args) {
 //  TODO: [x]Create a class named Bob with a main method for the following exercise.
 //        Bob is a lackadaisical teenager. In conversation, his responses are very limited.
 //        Bob answers 'Sure.' if you ask him a question.
@@ -45,6 +43,8 @@ class Bob {
 //        [x]He answers 'Whatever.' to anything else.
 //        Write the Java code necessary so that a user of your
 //        command line application can have a conversation with Bob.
+class Bob {
+    public static void main(String[] args) {
         //create Strings with Bob's responses(4)
         String messageWithQuestionMark = "Bob: Sure.";
         String messageWithExclamation = "Bob: Whoa, chill out!";
@@ -56,15 +56,16 @@ class Bob {
         System.out.println("Would you like to talk to Bob? yes/no");
         String usersResponse = sc.nextLine();
         String continues;
-        switch(usersResponse) {
+        switch(usersResponse.toLowerCase()) {
             case "yes":
                 do {
                     System.out.println("What would you like to say?");
                     System.out.println("Bob: ...");
                     String usersResponse2 = sc.nextLine();
-                    if (usersResponse2.indexOf("?") >= 0) {
+            //ORIGINALLY HAD IT INDEXOF >= 0 BUT != -1 FUNCTIONS BETTER.
+                    if (usersResponse2.indexOf("?") != -1) {
                         System.out.println(messageWithQuestionMark);
-                    } else if (usersResponse2.indexOf("!") >= 0) {
+                    } else if (usersResponse2.indexOf("!") != -1) {
                         System.out.println(messageWithExclamation);
                     } else if (usersResponse2.length() < 1) {
                         System.out.println(messageWithNothing);
@@ -74,18 +75,13 @@ class Bob {
                     System.out.println(contQuestion);
                     continues = sc.nextLine();
                 } while (continues.equals("yes"));
+            //ORIGINALLY HAD CASE: "NO" FIRST, BUT HAVING IT LAST GIVES ME THE MSG W/ EVERY USER RESPONSE OF "NO"
             case "no":
                 System.out.println("*Bob shrugs and walks away*");
                 break;
         }
-
-
-
-
-
-
-
-
+    }
+}
 //       if (usersResponse.equals("no")){
 //               System.out.println("He's busy anyway.");
 //           } else if (usersResponse.equals("yes")) {
@@ -94,17 +90,3 @@ class Bob {
 //       if (usersResponse2.equals("hi")){
 //
 //       }
-
-
-//            System.out.println("\n Please enter your name, favorite color and favorite food");
-//            String usersResponse = sc.next();
-//            if (usersResponse.equals()) {
-//                System.out.println(messageWithNothing);
-
-        //(if the input ends with a question mark)
-        //(the input ends with an exclamation mark)
-        //(empty input)
-        //'Whatever.' to anything else.
-
-    }
-}
