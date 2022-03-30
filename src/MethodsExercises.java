@@ -1,8 +1,6 @@
 import java.util.Scanner;
-
+//you can only have one main method.
 public class MethodsExercises {
-    //you can only have one main method.
-// TODO: use recursion to print out a given number up through 100
     /**
      public static int countTo100(int num) {
      // }
@@ -24,7 +22,6 @@ public class MethodsExercises {
      return countTo100(num + 1);
      }
      **/
-// TODO: use recursion to add all numbers up from 1 to a given number
 /**
  // public static int addNums(int num) {
  // }
@@ -36,7 +33,8 @@ public class MethodsExercises {
  return num + addNums(num - 1);
  }
  **/
-// TODO: Create four separate methods. Each will perform an arithmetic operation:
+
+//TODO: Exercise #1:
 /**
  //Addition
  public static int addSome(int n, int n2){
@@ -70,43 +68,29 @@ public class MethodsExercises {
  public static int modulusMe(int n1, int n2){
  return n1 % n2;
  }
- **/
-//TODO:a. Basic Arithmetic.
-//TODO:b.Each function needs to take two parameters/
-// arguments so that the operation can be performed
-//TODO: c.Test your methods and verify the output.
-//TODO: d.Add a modulus method that finds
-// the modulus of two numbers.
-//public static void main(String[] args) {
 
-    /**
-     * //        addSomeMsg(); System.out.println(addSome(2,2));
-     * //        subSomeMsg(); System.out.println(subtractMe(10,5));
-     * //        mulSomeMsg(); System.out.println(multiplyMe(5,5));
-     * //        divSomeMsg(); System.out.println(divideMe(10,5));
-     * //        Scanner sc = new Scanner(System.in);
-     * //        System.out.println("Please enter two numbers: ");
-     * System.out.println("Add: " + addSome(2,2));
-     * System.out.println("Subtract: " + subtractMe(10, 5));
-     * System.out.println("Multiply: " + multiplyMe(5, 5));
-     * System.out.println("Divide: " + divideMe(10, 5));
-     **/
+public static void main(String[] args) {
+    //        addSomeMsg(); System.out.println(addSome(2,2));
+    //        subSomeMsg(); System.out.println(subtractMe(10,5));
+    //        mulSomeMsg(); System.out.println(multiplyMe(5,5));
+    //        divSomeMsg(); System.out.println(divideMe(10,5));
+    //        Scanner sc = new Scanner(System.in);
+    //        System.out.println("Please enter two numbers: ");
+    System.out.println("Add: " + addSome(2,2));
+    System.out.println("Subtract: " + subtractMe(10, 5));
+    System.out.println("Multiply: " + multiplyMe(5, 5));
+    System.out.println("Divide: " + divideMe(10, 5));
+
+}
+ **/
 //Do the above with recursion. <-bonus
-//}
-//TODO:Create a method that validates that user input
-// is in a certain range
-// The method signature should look like this:
-    //public static int getInteger(int min, int max);
-    //and is used like this:
-//        System.out.print("Enter a number between 1 and 10: ");
-//        int userInput = getInteger(1, 10);
-//     TODO:If the input is invalid, prompt the user again.
-//        Hint: recursion might be helpful here!
-    //[x]create the scanner.
-    //[x]get users input.
-    //[x]if users input is greater than 10
-    // or less than 0, continue to prompt user.
-    //[x]user exits when entering correct number.
+//TODO: Exercise #2:
+/**
+     * //[x]create the scanner.
+     *     //[x]get users input.
+     *     //[x]if users input is greater than 10
+     *     // or less than 0, continue to prompt user.
+     *     //[x]user exits when entering correct number.
     public static void getInteger(int n){
         if (n > 10 || n <= 0) {
             do {
@@ -117,18 +101,35 @@ public class MethodsExercises {
         }
             System.out.println("thank you! goodbye.");
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a number between 1-10");
         int usersResp = sc.nextInt();
         getInteger(usersResp);
     }
+     **/
+
+//TODO: Exercise #3:
+public static void factorialCheck(){
+
+    }
+public static void main(String[] args) {
+//    []Prompt the user to enter an integer from 1 to 10.
+//    []Display the factorial of the number entered by the user.
+//    []Ask if the user wants to continue.
+//    []Use a for loop to calculate the factorial.
+//    [lol]Assume that the user will enter an integer,
+//    []but verify it’s between 1 and 10.
+//    []Use the long type to store the factorial.
+//    []Continue only if the user agrees to.
+//    *A factorial is a number multiplied by each of the numbers before it.
+//    *Factorials are denoted by the exclamation point (n!). Ex:
+
+}
+
 }
 
 
-//                Calculate the factorial of a number.
-//
 //                Prompt the user to enter an integer from 1 to 10.
 //        Display the factorial of the number entered by the user.
 //        Ask if the user wants to continue.
