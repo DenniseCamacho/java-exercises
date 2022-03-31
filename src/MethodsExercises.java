@@ -116,7 +116,21 @@ public static void main(String[] args) {
 
  *
 **/
-public static void factorialCheck(long n){
+public static void factorialCheck(long usersAnswer){
+    if (usersAnswer <= 0 || usersAnswer > 10) {
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("That is not a number from 1-10\n" +
+                    "Please enter a number from 1-10");
+            usersAnswer = sc.nextInt();
+        }while(usersAnswer <= 0 || usersAnswer > 10);
+        //OUT OF THE LOOP.
+        System.out.println("you're out of the loop");
+
+    } else if (usersAnswer > 0 || usersAnswer <= 10){
+//            Scanner sc = new Scanner(System.in);
+            System.out.println("THANKS");
+    }
 
     }
 public static void main(String[] args) {
@@ -125,6 +139,13 @@ public static void main(String[] args) {
     //PROMPT THE USER
     System.out.println("Please enter a number from 1-10");
     int usersAnswer = sc.nextInt();
+    factorialCheck(usersAnswer);
+/**
+    1! = 1               = 1
+    2! = 1 x 2           = 2
+    3! = 1 x 2 x 3       = 6
+    4! = 1 x 2 x 3 x 4   = 24
+**/
 
 //    [x]Prompt the user to enter an integer from 1 to 10.
 //    []Display the factorial of the number entered by the user.
