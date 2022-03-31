@@ -125,7 +125,8 @@ public static void factorialCheck(long usersAnswer){
             usersAnswer = sc.nextInt();
         }while(usersAnswer <= 0 || usersAnswer > 10);
         //OUT OF THE LOOP.
-        System.out.println("you're out of the loop");
+        Scanner sc = new Scanner(System.in);
+        System.out.printf("%d is your answer", usersAnswer);
 
     } else if (usersAnswer > 0 || usersAnswer <= 10){
 //            Scanner sc = new Scanner(System.in);
