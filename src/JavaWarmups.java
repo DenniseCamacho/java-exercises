@@ -1,5 +1,7 @@
 public class JavaWarmups {
+    public static void main(String[] args) {
 
+    }
 //TODO:Java warmup 1:
 /**
  *
