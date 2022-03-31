@@ -1,7 +1,7 @@
 import java.util.Scanner;
 //you can only have one main method.
 public class MethodsExercises {
-    /**
+/**
      public static int countTo100(int num) {
      // }
      public static void countTo100(int num){
@@ -13,7 +13,7 @@ public class MethodsExercises {
      countTo100(num + 1);
      } //invoked in main.
      **/
-    /**
+/**
      public static int countTo100(int num){
      System.out.println(num);
      if(num == 100){
@@ -84,6 +84,7 @@ public static void main(String[] args) {
 }
  **/
 //Do the above with recursion. <-bonus
+
 //TODO: Exercise #2:
 /**
      * //[x]create the scanner.
@@ -110,15 +111,26 @@ public static void main(String[] args) {
      **/
 
 //TODO: Exercise #3:
-public static void factorialCheck(){
+/**
+ *
+
+ *
+**/
+public static void factorialCheck(long n){
 
     }
 public static void main(String[] args) {
-//    []Prompt the user to enter an integer from 1 to 10.
+    //CREATE THE SCANNER
+    Scanner sc = new Scanner(System.in);
+    //PROMPT THE USER
+    System.out.println("Please enter a number from 1-10");
+    int usersAnswer = sc.nextInt();
+
+//    [x]Prompt the user to enter an integer from 1 to 10.
 //    []Display the factorial of the number entered by the user.
 //    []Ask if the user wants to continue.
 //    []Use a for loop to calculate the factorial.
-//    [lol]Assume that the user will enter an integer,
+//    []Assume that the user will enter an integer,
 //    []but verify it’s between 1 and 10.
 //    []Use the long type to store the factorial.
 //    []Continue only if the user agrees to.
@@ -127,60 +139,48 @@ public static void main(String[] args) {
 
 }
 
+//TODO: Exercise #4:
+/***
+// Create an application that simulates dice rolling.
+//[]Ask the user to enter the number of sides for a pair of dice.
+//[]Prompt the user to roll the dice.
+//[]"Roll" two n-sided dice, display the results of each
+//[]ask the user if he/she wants to roll the dice again.
+//[?]Use static methods to implement the method(s) that
+// generate the random numbers.
+//[]Use the .random method of the java.lang.Math
+// class to generate random numbers.
+ ***/
 }
 
 
-//                Prompt the user to enter an integer from 1 to 10.
-//        Display the factorial of the number entered by the user.
-//        Ask if the user wants to continue.
-//        Use a for loop to calculate the factorial.
-//                Assume that the user will enter an integer, but verify it’s between 1 and 10.
-//        Use the long type to store the factorial.
-//        Continue only if the user agrees to.
-//        A factorial is a number multiplied by each of the numbers before it.
-//                Factorials are denoted by the exclamation point (n!). Ex:
-//
-//
-//        1! = 1               = 1
-//        2! = 1 x 2           = 2
-//        3! = 1 x 2 x 3       = 6
-//        4! = 1 x 2 x 3 x 4   = 24
-//        Bonus
-//
-//        Test the application and find the integer for the highest factorial that can be accurately calculated by this application, then modify the prompt so that it prompts the user for a number "from 1 to {the highest integer that returns accurate factorial calculation}". Don’t forget to change your verification too!
-//                Use recursion to implement the factorial.
-//                Create an application that simulates dice rolling.
-//
-//        Ask the user to enter the number of sides for a pair of dice.
-//        Prompt the user to roll the dice.
-//        "Roll" two n-sided dice, display the results of each, and then ask the user if he/she wants to roll the dice again.
-//        Use static methods to implement the method(s) that generate the random numbers.
-//                Use the .random method of the java.lang.Math class to generate random numbers.
-//        Game Development 101
-//
-//        Welcome to the world of game development!
-//
-//                You are going to build a high-low guessing game. Create a class named HighLow inside of src.
-//
-//        The specs for the game are:
-//
-//        Game picks a random number between 1 and 100.
-//        Prompts user to guess the number.
-//        All user inputs are validated.
-//                If user's guess is less than the number, it outputs "HIGHER".
-//        If user's guess is more than the number, it outputs "LOWER".
-//        If a user guesses the number, the game should declare "GOOD GUESS!"
-//        Hints
-//
-//        Use the random method of the java.lang.Math class to generate a random number.
-//        Bonus
-//
+
+
+
+//TODO BONUS(optional):
+/**
+//Game Development 101
+//Welcome to the world of game development!
+// You are going to build a high-low guessing game.
+// []Create a class named HighLow inside of src.
+//The specs for the game are:
+//       []Game picks a random number between 1 and 100.
+//       []Prompts user to guess the number.
+//       []All user inputs are validated.
+//       []If user's guess is less than the number, it outputs "HIGHER".
+//       []If user's guess is more than the number, it outputs "LOWER".
+//       []If a user guesses the number, the game should
+//       declare "GOOD GUESS!"
+//        Hints:
+//        Use the random method of the java.lang.Math
+//        class to generate a random number.
+//        Bonus:
 //        Keep track of how many guesses a user makes.
-//                Set an upper limit on the number of guesses.
-//        codeycodey Pair programming exercise
-//
-//        Remember to follow our pair programming best practices and switch computers every once in a while.
-//
+//        Set an upper limit on the number of guesses.
+ **/
+
+// TODO: Pair programming exercise(optional):
+/**
 //        Console Adventure Game! ///optional
 //
 //                Using what you've learned so far in the Java I module, we're going to create a classic text-based RPG game. These types of online role-playing games date back to the 70's and solely rely on a text-based interface. In this case, we'll be using Java to run this game in our console.
@@ -205,6 +205,12 @@ public static void main(String[] args) {
 //        Indicate how many potions your hero starts with. Decrement this number each time 'Use Potion' action is used.
 //
 //                Remember that these are only suggestions. Feel free to get creative and have fun!!
+ **/
+
+
+
+/**Notes=======v====v=v=v=v=v**/
+ /**
 //--------------
 //public class MethodLecture {
 //
@@ -297,8 +303,6 @@ public static void main(String[] args) {
 //
 //        }
 //
-//     */
-//
 //    public static void sayHello() {
 //        sayHello("Hello", "World");
 //    }
@@ -337,7 +341,7 @@ public static void main(String[] args) {
 //
 //    // ----------- RECURSION
 //
-//    /*
+//
 //
 //        BASICS
 //
@@ -354,7 +358,7 @@ public static void main(String[] args) {
 //        Recursion allows programmers to express certain algorithms in a simpler way. Recursive solutions can
 //        be less efficient and possibly throw an exception if there are too many recursive calls.
 //
-//     */
+//
 //
 //    public static long powersOfTen(int n) {
 //        if (n == 0) return 1;
@@ -391,3 +395,4 @@ public static void main(String[] args) {
 //
 //
 //}
+**/
