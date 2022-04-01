@@ -3,10 +3,10 @@ public class Person {
     private static String name;
 
 
-    public static void setName(String name) {
-        Person.name = name;
+    public void setName(String name) {
+        this.name = name;
     }
-    public static String getName() {
+    public String getName() {
         return name;
     }
     public void sayHello(){
