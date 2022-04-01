@@ -1,10 +1,24 @@
-//public class Person {
-//private String name = "Dennise";
-//}
-//public String getName(){
-//
-//    return null;
-//}
+
+public class Person {
+    private static String name;
+
+
+    public static void setName(String name) {
+        Person.name = name;
+    }
+    public static String getName() {
+        return name;
+    }
+    public void sayHello(){
+        System.out.printf("%n%S says hello!", name);
+    }
+
+
+}
+
+
+
+
 //    Object basics
 //
 //    Create Person class inside of src that has a private name field that is a string, and the following methods:

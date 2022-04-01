@@ -13,9 +13,9 @@
 //    }
 
 public class Dish {
-    public int costInCents;
-    public String nameOfDish;
-    public boolean wouldRecommend;
+    private int costInCents;
+    private String nameOfDish;
+    private boolean wouldRecommend;
 
     public static void printSummary(int costInCents, String nameOfDish, boolean wouldRecommend) {
         System.out.printf(" Cost: %d %n Name: %s %n Recommended: %b", costInCents, nameOfDish, wouldRecommend);
