@@ -2,15 +2,21 @@
 public class Person {
     private static String name;
 
+public Person(String name){
+    this.name = name;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
+
     public String getName() {
-        return name;
-    }
+        return this.name;
+}
+
+
     public void sayHello(){
-        System.out.printf("%n%S says hello!", name);
+        System.out.printf("%n%s says hello!", name);
     }
 
 
