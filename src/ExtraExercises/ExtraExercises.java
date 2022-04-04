@@ -21,7 +21,10 @@ public class ExtraExercises {
     }
 }
 
-//
+//So, I was working on some things, and git pushes were not working.
+// I searched google and realized my email was incorrect.
+// going back and redoing work to understand.
+
 ////# Extra Methods Exercises
 ////
 ////        1. Create a vowel counting method for each vowel in the alphabet (not including
