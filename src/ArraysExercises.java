@@ -10,15 +10,21 @@ public class ArraysExercises {
 //
 //      What happens when you run the following code? Why is
 //      Arrays.toString necessary? it shows the array, not the #
-      int[] numbers = {1, 2, 3, 4, 5};
-      System.out.println("without Arrays.toString(): " +
-              numbers +
-              "\n" +
-              "with Arrays.toString(): " + Arrays.toString(numbers));
+        int[] numbers = {1, 2, 3, 4, 5};
+        System.out.println(
+        "without Arrays.toString(): " +
+        numbers +
+        "\n" +
+        "with Arrays.toString(): " +
+        Arrays.toString(numbers)
+        );
 //      Create an array that holds 3 Person objects. Assign a new
 //      instance of the Person class to each element. Iterate through
 //      the array and print out the name of each person in the array.
-//
+        String[] threePeople = {"Father", "Spirit", "Son"};
+        for (String onePerson : threePeople) {
+            System.out.println(onePerson);
+        }
 //      Create a static method named addPerson. It should
 //      accept an array of Person objects, as well as a
 //      single person object to add to the passed array. It
