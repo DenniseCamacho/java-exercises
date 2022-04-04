@@ -1,24 +1,30 @@
-//package ExtraExercises;
-//
-//public class ExtraExercises {
-//    static String input;
-//
-//    public void setName(){
-//
-//    }
-//
-////        1. Create a method, `getType()` that will take in an input and return a string
-//public static String getType(String input){
-//        return input;
-//}
-//// 1. Create a method that will return how many capital letters are in a string.
-////public static String howManyCapitals(){
-////    int count = 0;
-////
-////
-////}
-//
-//}
+package ExtraExercises;
+
+public class ExtraExercises {
+    static String input;
+
+    public void setName() {
+
+    }
+
+    //        1. Create a method, `getType()` that will take in an input and return a string
+    public static String getType(String input) {
+        return input;
+    }
+
+    // 1. Create a method that will return how many capital letters are in a string.
+    public static int howManyCapitals(String word) {
+        int count = 0;
+        String uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        for (int i = 0; i < word.length() ; i++) {
+
+            System.out.println(word.contains(uppercaseLetters));
+        }
+        return count;
+    }
+}
+
+
 ////# Extra Methods Exercises
 ////
 ////        1. Create a vowel counting method for each vowel in the alphabet (not including
