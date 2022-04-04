@@ -1,6 +1,5 @@
 public class PersonTest {
     public static void main(String[] args) {
-
         Person person01 = new Person("Dennise");
         person01.setName("Dennise");
         person01.sayHello();
@@ -11,7 +10,13 @@ public class PersonTest {
         person02.sayHello();
         System.out.println("\nthis is person02: " + person02.getName());
 
-        System.out.printf("\nperson01.getName()" + (person01.getName()) + "\nperson02.getName() " + (person02.getName()));
+
+        System.out.printf(
+                          "\nperson01.getName() " +
+                          ( person01.getName() )  +
+                          "\nperson02.getName() " +
+                          ( person02.getName() )
+                            );
         //why are both names Jan?
         //person01 isnt Jan...
 

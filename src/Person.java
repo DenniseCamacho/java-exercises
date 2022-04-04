@@ -1,9 +1,9 @@
 
 public class Person {
-    private static String name;
+    private String name;
 
-public Person(String name){
-    this.name = name;
+    public Person(String name){
+        this.name = name;
     }
 
     public void setName(String name) {
@@ -11,7 +11,7 @@ public Person(String name){
     }
 
     public String getName() {
-        return this.name;
+        return name;
 }
 
 
