@@ -6,6 +6,6 @@ import static ExtraExercises.ExtraExercises.howManyCapitals;
 public class ExtraExercisesTest {
 
     public static void main(String[] args) {
-        System.out.println(howManyCapitals("Love"));
+        System.out.println(howManyCapitals("LovE"));
     }
 }

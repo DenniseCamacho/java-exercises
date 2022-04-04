@@ -15,7 +15,38 @@ public class ExtraExercises {
     // 1. Create a method that will return how many capital letters are in a string.
     public static int howManyCapitals(String word) {
         int count = 0;
-//        char[] upperCases = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
+        if (
+                word.contains("A") ||
+                word.contains("B") ||
+                word.contains("C") ||
+                word.contains("D") ||
+                word.contains("E") ||
+                word.contains("F") ||
+                word.contains("G") ||
+                word.contains("H") ||
+                word.contains("I") ||
+                word.contains("J") ||
+                word.contains("K") ||
+                word.contains("L") ||
+                word.contains("M") ||
+                word.contains("N") ||
+                word.contains("O") ||
+                word.contains("P") ||
+                word.contains("Q") ||
+                word.contains("R") ||
+                word.contains("S") ||
+                word.contains("T") ||
+                word.contains("U") ||
+                word.contains("V") ||
+                word.contains("W") ||
+                word.contains("X") ||
+                word.contains("Y") ||
+                word.contains("Z")){
+            count++;
+        }
+
+
+//        char[] upperCases = {'', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
         return count;
     }
