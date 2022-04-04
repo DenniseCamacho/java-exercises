@@ -1,4 +1,3 @@
-import java.sql.Array;
 import java.util.Arrays;
 
 public class ArraysExercises {
@@ -21,9 +20,11 @@ public class ArraysExercises {
 //      Create an array that holds 3 Person objects. Assign a new
 //      instance of the Person class to each element. Iterate through
 //      the array and print out the name of each person in the array.
-        String[] threePeople = {"Father", "Spirit", "Son"};
+        String[] threePeople = {"Daniel", "David", "Elijah"};
         for (String onePerson : threePeople) {
-            System.out.println(onePerson);
+            System.out.println("this is forloop: " + onePerson);
+        }
+        addPerson(Arrays.toString(threePeople));
         }
 //      Create a static method named addPerson. It should
 //      accept an array of Person objects, as well as a
@@ -31,5 +32,8 @@ public class ArraysExercises {
 //      should return an array whose length is 1 greater than
 //      the passed array, with the passed person object at
 //      the end of the array.
+    public static String addPerson(String a){
+        return a;
     }
-}
+
+    }
