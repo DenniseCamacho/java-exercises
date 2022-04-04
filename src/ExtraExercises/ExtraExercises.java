@@ -21,7 +21,7 @@ public class ExtraExercises {
     }
 }
 
-
+//
 ////# Extra Methods Exercises
 ////
 ////        1. Create a vowel counting method for each vowel in the alphabet (not including
