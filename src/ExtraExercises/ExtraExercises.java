@@ -15,11 +15,8 @@ public class ExtraExercises {
     // 1. Create a method that will return how many capital letters are in a string.
     public static int howManyCapitals(String word) {
         int count = 0;
-        String uppercaseLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-        for (int i = 0; i < word.length() ; i++) {
+//        char[] upperCases = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
 
-            System.out.println(word.contains(uppercaseLetters));
-        }
         return count;
     }
 }
