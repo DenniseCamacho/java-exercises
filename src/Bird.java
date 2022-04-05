@@ -28,4 +28,7 @@ public class Bird {
     public void move(){
         System.out.println("Flap flap");
     }
+    public Bird(){
+
+    }
 }
