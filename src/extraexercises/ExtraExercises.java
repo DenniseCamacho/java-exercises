@@ -1,4 +1,4 @@
-package ExtraExercises;
+package extraexercises;
 
 public class ExtraExercises {
     static String input;

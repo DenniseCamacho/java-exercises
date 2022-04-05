@@ -1,7 +1,6 @@
-package ExtraExercises;
+package extraexercises;
 
-import static ExtraExercises.ExtraExercises.getType;
-import static ExtraExercises.ExtraExercises.howManyCapitals;
+import static extraexercises.ExtraExercises.howManyCapitals;
 
 public class ExtraExercisesTest {
 
