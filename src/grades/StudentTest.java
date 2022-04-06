@@ -13,6 +13,7 @@ public class StudentTest {
         studentOne.addGrade(90);
         studentOne.addGrade(55);
         System.out.println(studentOne.getGrades());
+        System.out.println(studentOne.getGradeAverage());
 
 
 

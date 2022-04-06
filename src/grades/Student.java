@@ -19,7 +19,6 @@ public class Student {
         return grades;
     }
 
-
     public String getName() {
         return name;
     }
