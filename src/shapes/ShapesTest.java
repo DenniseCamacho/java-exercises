@@ -9,6 +9,11 @@ public static void main(String[] args) {
     System.out.println(myShape.getPerimeter());
     System.out.println(myShape.getArea());
 
+    //#10
+//    cannot resolve get Length in measurable because....
+    //myShape is declared as a measurable.
+    //even though rectangles and squares are assigned to it...
+    //the reference type is a measurable reference...
 }
 
 
