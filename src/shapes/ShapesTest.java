@@ -1,9 +1,13 @@
 package shapes;
 
 public class ShapesTest {
-    //declare a variable of the type Measurable named myShape.
-
+//    create instances of both Square and Rectangle and assign
+//    them to myShape so you can display the shape's area and perimeter.
     Measurable myShape;
+
+
+
+
 
 ////    public static void main(String[] args) {
 ////

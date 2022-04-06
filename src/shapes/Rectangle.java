@@ -3,22 +3,26 @@ package shapes;
 public class Rectangle extends Quadrilateral implements Measurable{
     @Override
     public double getPerimeter() {
-        return 0;
+        return (2 * width) + (2 * length);
     }
 
     @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 
     @Override
-    public double setLength() {
-        return 0;
+    public void setLength(double length) {
+        //obj property //method prop...
+        this.length = length; //you use this because of name place conflict in the parameter.
+        //to make it understand the difference, you must have this.
+        //if you rename the parameter you dont have to use this, but it's better
+//        to use "this"
     }
 
     @Override
-    public double setWidth() {
-        return 0;
+    public void setWidth(double width) {
+
     }
 
 //    protected int length;

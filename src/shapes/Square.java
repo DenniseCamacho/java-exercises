@@ -1,25 +1,30 @@
 package shapes;
 
 public class Square extends Quadrilateral {
-    @Override
+
+    //could do private double length;
+                            //^superclass
+    //go into super class and call its constructor.
+    public Square(double side){
+        super(side, side); //the constructor that takes two arguments.
+        //pass the side arguments. set length width to both of them
+    }
     public double getPerimeter() {
-        return 0;
+        return 4 * length;
     }
 
-    @Override
     public double getArea() {
-        return 0;
+        return length * width;
     }
 
-    @Override
-    public double setLength() {
-        return 0;
+    public void setLength(double length) {
+
     }
 
-    @Override
-    public double setWidth() {
-        return 0;
+    public void setWidth(double width) {
+
     }
+
 
 //    public Square(int length, int width) {
 //        super(length, width);
