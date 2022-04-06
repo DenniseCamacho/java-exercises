@@ -18,10 +18,14 @@ public class Square extends Quadrilateral {
     }
 
     public void setLength(double length) {
+        this.length = length;
+        this.width = width;
 
     }
 
     public void setWidth(double width) {
+        this.width = width;
+        this.length = width;
 
     }
 
