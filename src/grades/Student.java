@@ -2,6 +2,8 @@ package grades;
 
 import java.util.ArrayList;
 
+import static java.lang.Math.round;
+
 public class Student {
 
     private String name;
@@ -34,7 +36,7 @@ public class Student {
         for (int grade : grades){
             sum += grade;
         }
-        return sum / theLength;
+        return round(sum) / theLength;
         //https://dirask.com/posts/Java-sum-all-ArrayList-elements-jm3PZD
     }
 }
