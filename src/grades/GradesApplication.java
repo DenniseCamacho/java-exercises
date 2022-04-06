@@ -34,6 +34,17 @@ public class GradesApplication {
             System.out.printf(" %s | ", gitHubUser);
         }
 
+        /**
+         * Scanner scanner = new Scanner (System.in);
+         * String userInput = scanner.nextLine();
+         * //or containsKey(userInput)
+         * if (gitHubUserNames.contains(userInput)){
+         *     soutf("Name: %s GitHub Username: %s %n", students.get(userInput), userInput)
+         * } else {
+         *     soutf("no user found by the name " + userInput);
+         * }
+         */
+
     }
 
 //    TODO: Create the command line interface
