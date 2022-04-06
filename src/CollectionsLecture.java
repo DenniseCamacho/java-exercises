@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 
 public class CollectionsLecture {
     public static void main(String[] args) {
@@ -35,6 +37,7 @@ public class CollectionsLecture {
 //        Add the persons to the ArrayList.
 //        Iterate over the ArrayList either with a for loop or an enhanced for loop,
 //        printing out to the console each person's name.
+        /**
 ArrayList<Person> PersonList = new ArrayList<>();
         Person John = new Person("John");
         Person Dennise = new Person("Dennise");
@@ -45,8 +48,41 @@ ArrayList<Person> PersonList = new ArrayList<>();
         for (Person person : PersonList){
             System.out.println(person.getName());
         }
+         **/
+        ArrayList<Integer> myNumbers = new ArrayList<>();
+        myNumbers.add(42);
+        myNumbers.add(56);
+        myNumbers.add(43);
+        System.out.println(myNumbers.get(1));
+        System.out.println(myNumbers);
+        //to sort them... sorting an array list of integers.
+        //collections is built in, its not a class.
+        Collections.sort(myNumbers);
+        System.out.println(myNumbers);
+//hashmaps ... collections.sort will not work for this.
+        //its a map not a list...
+        HashMap<String, Integer> careerWins = new HashMap<>();
+        careerWins.put("Some0 Name", 1341);
+        careerWins.put("Some1 Othername", 1234);
+        careerWins.put("And2 Anothername", 2314);
 
+        System.out.println(careerWins.get("Some0 Name"));
+        System.out.println(careerWins);
+        careerWins.replace("Some0 Name", 2002);
+        System.out.println(careerWins);
+        System.out.println(careerWins.get("And2 Anothername"));
+        //a key and a value... in an order that's not the same.
+        //if you want an order, you need to use a list.
+        //https://www.geeksforgeeks.org/how-to-iterate-hashmap-in-java/
+        //you cant use a for loop, theres no index...use:
+        //for(map.Entry<String, Integer> careerWinsEntry : careerWins.entrySet()){
+//        System.out.println(careerWinsEntry.getKey() + ":" + careerWins.getValue());
+//    }
+        //entryset returns the elements in the hashmap.
 
+//grocerylist app optional.
+        //come back to it.
+        //bonuses, optional.
 
     }
 }
