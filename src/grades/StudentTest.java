@@ -15,6 +15,16 @@ public class StudentTest {
         System.out.println(studentOne.getGrades());
         System.out.println(studentOne.getGradeAverage());
 
+        Student studentTwo = new Student("John");
+        studentTwo.addGrade(100);
+        studentTwo.addGrade(99);
+        studentTwo.addGrade(75);
+        studentTwo.addGrade(89);
+        studentTwo.addGrade(90);
+        studentTwo.addGrade(85);
+        System.out.println(studentTwo.getGrades());
+        System.out.println(studentTwo.getGradeAverage());
+
 
 
 
