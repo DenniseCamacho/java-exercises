@@ -9,7 +9,7 @@ public class JavaWarmups {
         public static int subtractTen(int oneInteger) {
             return oneInteger - 10;
         }
-        //3. Create a public static method *average* that takes an array of integers and returns their average as a double.
+        //3. **Create a public static method *average* that takes an array of integers and returns their average as a double.
 
         //4. Create a class called Pet with two String instance variables, name and type.
         //5. Create getters and setters for the properties as well as a constructor that takes two strings and sets the name and type.
