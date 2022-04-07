@@ -1,51 +1,26 @@
 package extraexercises;
 
 public class ExtraExercises {
-    static String input;
 
-    public void setName() {
 
-    }
+
 
     //        1. Create a method, `getType()` that will take in an input and return a string
-    public static String getType(String input) {
-        return input;
+    public static String getType(Object input) {
+        return input.getClass().getName();
     }
 
     // 1. Create a method that will return how many capital letters are in a string.
+
+
     public static int howManyCapitals(String word) {
         int count = 0;
-//        if (
-//                word.contains("A") ||
-//                word.contains("B") ||
-//                word.contains("C") ||
-//                word.contains("D") ||
-//                word.contains("E") ||
-//                word.contains("F") ||
-//                word.contains("G") ||
-//                word.contains("H") ||
-//                word.contains("I") ||
-//                word.contains("J") ||
-//                word.contains("K") ||
-//                word.contains("L") ||
-//                word.contains("M") ||
-//                word.contains("N") ||
-//                word.contains("O") ||
-//                word.contains("P") ||
-//                word.contains("Q") ||
-//                word.contains("R") ||
-//                word.contains("S") ||
-//                word.contains("T") ||
-//                word.contains("U") ||
-//                word.contains("V") ||
-//                word.contains("W") ||
-//                word.contains("X") ||
-//                word.contains("Y") ||
-//                word.contains("Z")){
-//            count++;
-//        }
-////        char[] upperCases = {'', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'};
-
+        for (int i = 0; i < word.length(); i++) {
+//            System.out.println(Character.isUpperCase(word.charAt(i)));
+            if (Character.isUpperCase(word.charAt(i))){
+                count++;
+            }
+            }
         return count;
     }
 }
