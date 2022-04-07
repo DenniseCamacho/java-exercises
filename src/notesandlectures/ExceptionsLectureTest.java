@@ -9,12 +9,13 @@ public class ExceptionsLectureTest {
             System.out.println(lecture.testString.substring(5));
             System.out.println(lecture.testString.substring(21));
 
-        } catch (StringIndexOutOfBoundsException anyvarUsuallyNFE) {
+        } catch (StringIndexOutOfBoundsException anyvarUsuallyNFE
+        /**Exception instead of StringIndexOutOfBoundsException**/) {
             System.out.println("Did not work: " + anyvarUsuallyNFE);
         } finally {
             System.out.println("this always runs");
         }
-
+        //catch every exception type with Exception.
 
 
         /**
