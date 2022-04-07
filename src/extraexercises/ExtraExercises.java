@@ -24,22 +24,54 @@ public class ExtraExercises {
     //Each method, when passed a string, should return how many of that vowel
     // is in the string. Given a string, use all the vowel counting methods
     //to output the count of each vowel in a word.
-    public static long countVowels(String word){
+    public static String countVowels(String word){
         word = word.toLowerCase();
-        long count = 0;
+        String banner = "|======== VOWEL COUNT ========|";
+        String banner2 = "| A's | E's | I's | O's | U's |";
+        String bannerEnd = "|=============================|";
+        long countA = 0;
+        long countE = 0;
+        long countI = 0;
+        long countO = 0;
+        long countU = 0;
         for (int i = 0; i < word.length(); i++) {
-            if (    word.charAt(i) == 'a'||
-                    word.charAt(i) == 'e'||
-                    word.charAt(i) == 'i'||
-                    word.charAt(i) == 'o'||
-                    word.charAt(i) == 'u'  ){
-                count++;
+            switch (word.charAt(i)){
+                case 'a':
+                    countA++;
+//                    System.out.println("this is a");
+//                    System.out.println(Character.charCount(word.charAt(i)));
+                    break;
+                case 'e':
+                    countE++;
+                    break;
+                case 'i':
+                    countI++;
+                    break;
+                case 'o':
+                    countO++;
+                    System.out.println("this is o");
+                    break;
+                case 'u':
+                    countU++;
+                    System.out.println("this is u");
+                    break;
             }
+//            (word.charAt(i) == 'a')
+//            (word.charAt(i) == 'e')
+//            (word.charAt(i) == 'i')
+//            (word.charAt(i) == 'o')
+//            (word.charAt(i) == 'u')
+            }
+        System.out.println(banner);
+        System.out.println(banner2);
+        System.out.printf(
+                "| %d   | %d   | %d   | %d   | %d   |%n",
+                countA, countE, countI, countO, countU
+        );
+        return bannerEnd;
         }
-        System.out.printf("Your vowel count is : ");
-        return count;
+
         }
-    }
 
 
 //So, I was working on some things, and git pushes were not working.

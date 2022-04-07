@@ -16,8 +16,9 @@ public class ExtraExercisesTest extends ExtraExercises {
         System.out.println("---");
 
         //https://www.programiz.com/java-programming/examples/vowel-consonant-count-string
-        System.out.println(countVowels("chicken"));
-        System.out.println(countVowels("You reap what you sow"));
+//        System.out.println(countVowels("Kiindneess"));
+//        System.out.println(countVowels("Works without love is meaningless"));
+        System.out.println(countVowels("YayItWorked21"));
         System.out.println("---");
 
 
