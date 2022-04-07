@@ -14,7 +14,6 @@ public class Student {
     public Student(String name){
         this.name = name;
         this.grades = new ArrayList<>();
-
     }
 
     public ArrayList<Integer> getGrades() {
