@@ -24,6 +24,12 @@ public class ExtraExercises {
     //Each method, when passed a string, should return how many of that vowel
     // is in the string. Given a string, use all the vowel counting methods
     //to output the count of each vowel in a word.
+//    The `countVowels` method uses the following methods to produce it's output:
+//        - `countAs()` ???
+//        - `countEs()` ???
+//        - `countIs()` ???
+//        - `countOs()` ???
+//        - `countUs()` ???
     public static String countVowels(String word){
         word = word.toLowerCase();
         String banner = "|======== VOWEL COUNT ========|";
@@ -49,11 +55,9 @@ public class ExtraExercises {
                     break;
                 case 'o':
                     countO++;
-                    System.out.println("this is o");
                     break;
                 case 'u':
                     countU++;
-                    System.out.println("this is u");
                     break;
             }
 //            (word.charAt(i) == 'a')
@@ -70,7 +74,6 @@ public class ExtraExercises {
         );
         return bannerEnd;
         }
-
         }
 
 
@@ -79,30 +82,6 @@ public class ExtraExercises {
 // going back and redoing work to understand.
 
 ////# Extra Methods Exercises
-////
-////        1.
-////
-////        For example:
-////
-////        ```java
-////        countVowels("cat")
-////        ```
-////
-////        Should output:
-////
-////        |======== VOWEL COUNT ========|
-////        | A's | E's | I's | O's | U's |
-////        | 1   | 0   | 0   | 0   | 0   |
-////        |=============================|
-////
-////        The `countVowels` method uses the following methods to produce it's output:
-////
-////        - `countAs()`
-////        - `countEs()`
-////        - `countIs()`
-////        - `countOs()`
-////        - `countUs()`
-////
 ////        1. Create a method that will return how many capital letters are in a string.
 ////
 //
