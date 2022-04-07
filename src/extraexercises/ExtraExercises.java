@@ -2,17 +2,12 @@ package extraexercises;
 
 public class ExtraExercises {
 
-
-
-
-    //        1. Create a method, `getType()` that will take in an input and return a string
+    //1. Create a method, `getType()` that will take in an input and return a string
     public static String getType(Object input) {
-        return input.getClass().getName();
+        return "this is a(n) : " + input.getClass().getName();
     }
 
-    // 1. Create a method that will return how many capital letters are in a string.
-
-
+    //2. Create a method that will return how many capital letters are in a string.
     public static int howManyCapitals(String word) {
         int count = 0;
         for (int i = 0; i < word.length(); i++) {
@@ -21,9 +16,31 @@ public class ExtraExercises {
                 count++;
             }
             }
+        System.out.printf("Your uppercase count is: ");
         return count;
     }
-}
+
+    //3.Create a vowel counting method for each vowel in the alphabet (not including Y)
+    //Each method, when passed a string, should return how many of that vowel
+    // is in the string. Given a string, use all the vowel counting methods
+    //to output the count of each vowel in a word.
+    public static long countVowels(String word){
+        word = word.toLowerCase();
+        long count = 0;
+        for (int i = 0; i < word.length(); i++) {
+            if (    word.charAt(i) == 'a'||
+                    word.charAt(i) == 'e'||
+                    word.charAt(i) == 'i'||
+                    word.charAt(i) == 'o'||
+                    word.charAt(i) == 'u'  ){
+                count++;
+            }
+        }
+        System.out.printf("Your vowel count is : ");
+        return count;
+        }
+    }
+
 
 //So, I was working on some things, and git pushes were not working.
 // I searched google and realized my email was incorrect.
@@ -31,10 +48,7 @@ public class ExtraExercises {
 
 ////# Extra Methods Exercises
 ////
-////        1. Create a vowel counting method for each vowel in the alphabet (not including
-////        y). Each method, when passed a string, should return how many of that vowel
-////        is in the string. Given a string, use all of the these vowel counting methods
-////        to output the count of each vowel in a word.
+////        1.
 ////
 ////        For example:
 ////
