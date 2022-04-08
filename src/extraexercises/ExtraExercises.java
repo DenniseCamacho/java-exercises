@@ -29,7 +29,7 @@ public class ExtraExercises {
 //        - `countEs()` ???
 //        - `countIs()` ???
 //        - `countOs()` ???
-//        - `countUs()` ???
+//        - `countUs()` ??? //create a bunch of functions and make the function use them.
     public static String countVowels(String word){
         word = word.toLowerCase();
         String banner = "|======== VOWEL COUNT ========|";
@@ -77,9 +77,6 @@ public class ExtraExercises {
         }
 
 
-//So, I was working on some things, and git pushes were not working.
-// I searched google and realized my email was incorrect.
-// going back and redoing work to understand.
 
 ////# Extra Methods Exercises
 ////        1. Create a method that will return how many capital letters are in a string.
@@ -246,3 +243,8 @@ public class ExtraExercises {
 ////        ### Additional Practice
 ////
 ////        Consider revisiting previous exercises and bonuses to refactor to use methods. The string bonuses from the previous lesson would be a great exercise in refactoring to use methods.
+
+
+//So, I was working on some things, and git pushes were not working.
+// I searched google and realized my email was incorrect.
+// going back and redoing work to understand.
