@@ -19,7 +19,7 @@ public class ConsoleExercises {//class
 
 // TODO:Prompt a user to enter a integer and store that value in an
 //        int variable using the nextInt method.
-        //v----
+        //----
         //tool that helps get input from user.
         Scanner sc = new Scanner(System.in);
         System.out.println("enter the number of sandwiches you'd like to order");
