@@ -1,7 +1,5 @@
 package extraexercises;
 
-import static java.lang.Integer.getInteger;
-
 public class ExtraExercises {
 
     //1. Create a method, `getType()` that will take in an input and return a string
@@ -93,13 +91,21 @@ public class ExtraExercises {
         );
         return bannerEnd;
         }
+
+    ////        1. Create a method to print out every letter in a string using recursion.
+    public static void everyLetter(String word){
+        for (int i = 0; i < word.length(); i++) {
+        everyLetter(String.valueOf(word.charAt(i)));
         }
+    }
+
+        } //<-end of class.
 
 
 
 ////# Extra Methods Exercises
 
-////        1. Create a method to print out every letter in a string using recursion.
+
 ////
 ////        1. Create a method to determine if a string is a palindrome.
 ////
