@@ -93,10 +93,15 @@ public class ExtraExercises {
         }
 
     ////        1. Create a method to print out every letter in a string using recursion.
-    public static void everyLetter(String word){
-        for (int i = 0; i < word.length(); i++) {
-        everyLetter(String.valueOf(word.charAt(i)));
+    public static void everyLetter(String word, int length){
+        System.out.println(word.charAt(length - 1));
+        for (int i = 0; i < length; i++) {
+            everyLetter(word, length);
         }
+
+//        for (int i = 0; i < word.length(); i++) {
+//        everyLetter(String.valueOf(word.charAt(i)));
+//        }
     }
 
         } //<-end of class.

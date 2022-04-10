@@ -25,7 +25,7 @@ public class ExtraExercisesTest{
         System.out.println(tms.countVowels("YayItWorked21"));
         System.out.println("---");
 
-        tms.printEveryLetter("word");
+        tms.everyLetter("texas",5);
 
 
 
