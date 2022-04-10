@@ -8,6 +8,8 @@ public class ExtraExercisesTest extends ExtraExercises {
         //https://stackoverflow.com/questions/2674554/how-do-you-know-a-variable-type-in-java
         System.out.println(getType("What is this even"));
         System.out.println(getType(22));
+        System.out.println(getType(false));
+        System.out.println(getType('e'));
         System.out.println("---");
 
         //https://whaa.dev/how-to-check-if-a-string-contains-uppercase-in-java

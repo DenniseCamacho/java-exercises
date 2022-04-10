@@ -1,5 +1,7 @@
 package extraexercises;
 
+import static java.lang.Integer.getInteger;
+
 public class ExtraExercises {
 
     //1. Create a method, `getType()` that will take in an input and return a string
@@ -9,21 +11,20 @@ public class ExtraExercises {
         return "this is a(n) : " + input.getClass().getName();
     }
     public static String getType(int input){
-        return "this is a(n) : " + input;
+        return "this is in the int method";
     }
     public static String getType(boolean input){
-        return "this is a(n) : " + input;
+        return "this is in the boolean method";
     }
     public static String getType(String input){
-        return "this is a(n) : " + input;
+        return "this is in the String method";
     }
     public static String getType(char input){
-        return "this is a(n) : " + input;
+        return "this is in the char method";
     }
     public static String getType(double input){
         return "this is a(n) : " + input;
     }
-
 
     //2. Create a method that will return how many capital letters are in a string.
     public static int howManyCapitals(String word) {
