@@ -11,7 +11,9 @@ public class JavaWarmups {
 //
 // 2. Create a public static method in main called *subtractTen* that takes one
 //    integer argument and returns that number minus 10.
-//
+public static int subtractTen(int oneArgument){
+    return oneArgument - 10;
+}
 // 3. Create a public static method *average* that takes an array of integers
 //    and returns their average as a double.
 //
