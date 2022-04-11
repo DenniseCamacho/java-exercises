@@ -99,10 +99,11 @@ public class ExtraExercises {
             everyLetter(word, length);
         }
 
+    }
+
 //        for (int i = 0; i < word.length(); i++) {
 //        everyLetter(String.valueOf(word.charAt(i)));
 //        }
-    }
 
         } //<-end of class.
 
