@@ -91,7 +91,6 @@ public class ExtraExercises {
         );
         return bannerEnd;
         }
-
     ////        1. Create a method to print out every letter in a string using recursion.
     public static void everyLetter(String word, int length){
         System.out.println(word.charAt(length - 1));
@@ -100,21 +99,16 @@ public class ExtraExercises {
         }
 
     }
-
+////# Extra Methods Exercises
+////        1. Create a method to determine if a string is a palindrome.
+//a word, phrase, or sequence that reads the same backward as forward
+    public static String palindrome(String word){
+            return word;
+    }
 //        for (int i = 0; i < word.length(); i++) {
 //        everyLetter(String.valueOf(word.charAt(i)));
 //        }
-
         } //<-end of class.
-
-
-
-////# Extra Methods Exercises
-
-
-////
-////        1. Create a method to determine if a string is a palindrome.
-////
 ////        1. Create a method that will convert a written out whole number from "zero" to
 ////        "ninety-nine" and return the actual number.
 ////
