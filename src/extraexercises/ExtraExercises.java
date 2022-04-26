@@ -2,6 +2,7 @@ package extraexercises;
 
 
 public class ExtraExercises {
+    public ExtraExercises(){}
     //1. Create a method, `getType()` that will take in an input and return a string
     ////        describing the type of the value. Account for int, boolean, String, char, and
 ////        double. Use method overloading.
@@ -93,12 +94,14 @@ public class ExtraExercises {
         return bannerEnd;
         }
     ////        1. Create a method to print out every letter in a string using recursion.
-    public static char everyLetter(String word){
-       char neword = 0;
+    public static String everyLetter(String word){
         for (int i = 0; i < word.length(); i++) {
-           neword += word.charAt(i);
+
         }
-        return neword;
+        return word;
+    }
+    public static char everyLetter(){
+      return ' ';
     }
 ////# Extra Methods Exercises
 ////        1. Create a method to determine if a string is a palindrome.
