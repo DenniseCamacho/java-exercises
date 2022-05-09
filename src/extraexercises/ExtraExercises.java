@@ -6,8 +6,8 @@ public class ExtraExercises {
     //1. Create a method, `getType()` that will take in an input and return a string
     ////        describing the type of the value. Account for int, boolean, String, char, and
 ////        double. Use method overloading.
-    public static String getType(Object input) {
-        return "this is a(n) : " + input.getClass().getName();
+    public Object getType(Object input) {
+        return "this is a(n) obj?: " + input.getClass().getName();
     }
     public static String getType(int input){
         return "this is in the int method";
@@ -63,8 +63,6 @@ public class ExtraExercises {
             switch (word.charAt(i)){
                 case 'a':
                     countA++;
-//                    System.out.println("this is a");
-//                    System.out.println(Character.charCount(word.charAt(i)));
                     break;
                 case 'e':
                     countE++;
@@ -79,11 +77,6 @@ public class ExtraExercises {
                     countU++;
                     break;
             }
-//            (word.charAt(i) == 'a')
-//            (word.charAt(i) == 'e')
-//            (word.charAt(i) == 'i')
-//            (word.charAt(i) == 'o')
-//            (word.charAt(i) == 'u')
             }
         System.out.println(banner);
         System.out.println(banner2);
@@ -94,15 +87,19 @@ public class ExtraExercises {
         return bannerEnd;
         }
     ////        1. Create a method to print out every letter in a string using recursion.
-    public static String everyLetter(String word){
-        for (int i = 0; i < word.length(); i++) {
-
+    public static String everyLetter(String word, int wordLength){
+        if (wordLength == 0){
+            System.out.println("finished.");
+        } else {
+            for (int i = 0; i < word.length(); i++) {
+                System.out.println(word.charAt(i));
+                wordLength--;
+                everyLetter("",wordLength);
+            }
         }
-        return word;
+        return "";
     }
-    public static char everyLetter(){
-      return ' ';
-    }
+
 ////# Extra Methods Exercises
 ////        1. Create a method to determine if a string is a palindrome.
 //a word, phrase, or sequence that reads the same backward as forward
