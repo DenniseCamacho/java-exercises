@@ -45,13 +45,11 @@ public class Input {
 
     public int getInt(int min, int max) {
         int userInt = getInt();
-
         if(userInt > max || userInt < min) {
+            System.out.printf("%d is not valid, please enter a valid number.%n", userInt);
             return getInt(min, max);
         }
-
         return userInt;
-
     }
 
     public int getInt(String prompt, int min, int max) {
