@@ -32,5 +32,8 @@ private ArrayList<Integer> grades;
         System.out.println(length);
         return sum/length;
     }
+    public String toString(){
+        return name;
+    }
 
 }
